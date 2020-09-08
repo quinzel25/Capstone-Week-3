@@ -2,7 +2,7 @@
 import re
 
 
-# string = input('Enter a string you want to turn into camelcase: ')
+
 
 # function to convert a string into camelCase
 def camelCase(snake_str):
@@ -14,16 +14,19 @@ def camelCase(snake_str):
 # and I changed it to work with a ' ' (blank space) to work for this instance
 
 
-# print(camelCase(string))
+
 
 def display_banner():
     """ Display program name in banner """ 
-    msg = 'AWESOME camelCaseGenerator programs'
+    msg = 'AWESOME camelCaseGenerator program'
     stars = '*' * len(msg)
     print(f'\n {stars} \n {msg} \n {stars} \n')
 
+
+
 def main():
     display_banner()
+    print('Just type in any sentence regardless of case and this program will convert it into camelCase! \n')
     sentence = input('Enter your sentence: ')
     output = camelCase(sentence)
     print(output)
